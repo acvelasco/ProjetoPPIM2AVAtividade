@@ -10,25 +10,25 @@
 
 </head>
 <body>
-    <div class="container col-4">
+    <div class="container col-5" style="color:white; background-color: black; margin-top: 50px; margin-bottom: 20px; border-radius: 20px;" >
         <form action='/cadastrarUsuarios' method='GET'  class="row g-3">
             <fieldset class="border p-3" >
-                <legend style="color:blue;" class="mb-3">Cadastro de Usuários</legend>
+                <legend class="mb-3" style="text-align: center; font-size: 30px;">Cadastro de Usuários</legend>
             <div class="col-md-4">
               <label for="nome" class="form-label">Nome</label>
-              <input type="text" class="form-control" id="nome" name="nome" value="" required>
+              <input type="text" class="form-control" id="nome" name="nome" value="" required size="500" placeholder="Digite seu primeiro nome">
               <div class="invalid-feedback">Insira seu nome</div>
             </div>
             <div class="col-md-4">
-              <label for="sobrenome" class="form-label">Sobre Nome</label>
-              <input type="text" class="form-control" id="sobrenome" name="sobrenome" value="" required>
+              <label for="sobrenome" class="form-label">Sobrenome</label>
+              <input type="text" class="form-control" id="sobrenome" name="sobrenome" value="" required placeholder="Digite seu último nome">
               <div class="invalid-feedback">Insira seu sobrenome</div>
             </div>
             <div class="col-md-4">
               <label for="nomeusuario" class="form-label">Nome do Usuário</label>
               <div class="input-group">
                 <span class="input-group-text" id="inputGroupPrepend2">@</span>
-                <input type="text" class="form-control" id="nomeusuario" name="nomeusuario"  aria-describedby="inputGroupPrepend2" required>
+                <input type="text" class="form-control" id="nomeusuario" name="nomeusuario"  aria-describedby="inputGroupPrepend2" required placeholder="Digite o nome de usuário">
               </div>
               <div class="invalid-feedback">Insira Nome do Usuário</div>
             </div>
@@ -44,25 +44,23 @@
             </div>
             <div class="col-md-6">
               <label for="endereço" class="form-label">Endereço</label>
-              <input type="text" class="form-control" id="endereço" name="endereço" required>
+              <input type="text" class="form-control" id="endereço" name="endereço" required placeholder="Digite o endereço">
               <div class="invalid-feedback">Insira seu endereço</div>
             </div>
             <div class="col-md-6">
               <label for="endereço" class="form-label">Bairro</label>
-              <input type="text" class="form-control" id="endereço" name="endereço" required>
+              <input type="text" class="form-control" id="endereço" name="endereço" required placeholder="Digite o bairro">
               <div class="invalid-feedback">Insira seu bairro</div>
             </div>
             <div class="col-md-6">
               <label for="cidade" class="form-label">Cidade</label>
-              <input type="text" class="form-control" id="cidade" name="cidade" required>
+              <input type="text" class="form-control" id="cidade" name="cidade" required placeholder="Digite a cidade">
               <div class="invalid-feedback">Insira sua cidade</div>
             </div>
             <div class="col-md-3">
               <label for="estado" class="form-label">Estado</label>
               <select class="form-select" id="estado" required>
-                <option selected disabled value="">Selecionar
-                
-              </select><select id="estado" name="estado">
+                <option selected disabled value="" id="estado" name="estado">Selecionar</option>
                 <option value="AC">Acre</option>
                 <option value="AL">Alagoas</option>
                 <option value="AP">Amapá</option>
@@ -95,7 +93,7 @@
             </div>
             <div class="col-md-3">
               <label for="cep" class="form-label">CEP</label>
-              <input type="text" class="form-control" id="cep" name="cep" required>
+              <input type="text" class="form-control" id="cep" name="cep" required placeholder="99999-999">
               <div class="invalid-feedback">Insira seu CEP</div>
             </div>
             <br/>
@@ -108,11 +106,11 @@
             <br/>
             <div class="form-group">
               <label for="informacoes">Informações Adicionais:</label>
-              <textarea class="form-control" id="informacoes" rows="3"></textarea>
+              <textarea class="form-control" id="informacoes" rows="3" placeholder="Digite aqui..."></textarea>
             </div>
             <br/>
             <div class="col-12">
-              <button class="btn btn-primary" type="submit">Cadastrar</button>
+              <button class="btn btn-primary" type="submit" style="border: 2px solid black; align-items: center;">Cadastrar</button>
             </div>
         </fieldset>
           </form>
