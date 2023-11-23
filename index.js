@@ -101,3 +101,4 @@ app.listen(porta, host, () => {
     console.log(`Servidor executando na url http://${host}:${porta}`);
 
 });
+
