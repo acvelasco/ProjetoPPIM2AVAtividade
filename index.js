@@ -8,13 +8,13 @@ var listaUsuarios = [];
 
 function processarCadastroUsuario(requisicao, resposta){
     const usuario = {
-                        nome: resiquicao.query.nome,
-                        sobrenome: resiquicao.query.sobrenome,
-                        nomeusuario: resiquicao.query.nomeusuario,
+                        nome: requisicao.query.nome,
+                        sobrenome: requisicao.query.sobrenome,
+                        nomeusuario: requisicao.query.nomeusuario,
                         telefone: requisicao.query.telefone,
-                        endereco: resiquicao.query.endereco,
-                        cidade: resiquicao.query.cidade,
-                        estado: resiquicao.query.estado,
+                        endereco: requisicao.query.endereco,
+                        cidade: requisicao.query.cidade,
+                        estado: requisicao.query.estado,
                     }
     listaUsuarios.push(usuario);
     //retornar a lista de usuarios
@@ -32,7 +32,6 @@ function processarCadastroUsuario(requisicao, resposta){
         <table class="table table-hover">
         <thead>
             <tr>
-            <th scope="col">#</th>
             <th scope="col">Nome</th>
             <th scope="col">Sobrenome</th>
             <th scope="col">Nome do Usuario</th>
@@ -59,8 +58,8 @@ function processarCadastroUsuario(requisicao, resposta){
     conteudoResposta+= `
             </tbody>
             </table>
-            <a class="btn btn-primary" href="/" role="button">Voltar ao Menu</a>
-            <a class="btn btn-primary" href="/cadastrarUsuarios.html" role="button">Continuar Cadastrando</a>
+            <a class="btn btn-danger" href="/" role="button">Voltar ao Menu</a>
+            <a class="btn btn-success" href="/cadastrarUsuarios.html" role="button">Continuar Cadastrando</a>
         </body>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         </html>        

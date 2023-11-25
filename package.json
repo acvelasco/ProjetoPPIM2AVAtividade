@@ -1,25 +1,30 @@
 {
-  "name": "projetoppm2atividade",
+  "name": "projetoppim2avatividade",
   "version": "1.0.0",
-  "description": "aula projeto para manipulação dos parâmetros da url via formulário html",
+  "description": "Aula projeto para manipulação dos parâmetros da url via formulário html",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1", 
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "(https://github.com/Isabella-Santander/ProjetoPPM2Atividade.git)"
+    "url": "git+https://github.com/acvelasco/ProjetoPPIM2AVAtividade.git"
   },
   "keywords": [
     "node",
     "aprender",
     "ppi"
   ],
-  "author": "Isabella Santander e Any Carolina Velasco",
+  "author": "Any Carolina Carvalho Velasco",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acvelasco/ProjetoPPIM2AVAtividade/issues"
+  },
+  "homepage": "https://github.com/acvelasco/ProjetoPPIM2AVAtividade#readme",
   "dependencies": {
+    "espress": "^0.0.0",
     "express": "^4.18.2"
   }
 }
